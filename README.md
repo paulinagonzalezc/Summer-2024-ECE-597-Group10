@@ -1,6 +1,15 @@
 # Summer-2024-ECE-597-Group10
 
-## Logistic Regression
+## *Logistic Regression*
+
+## Results of base LR
+
+- **AUC Score:** `0.9985969484842256` 
+- **Balanced Accuracy Score:** `0.8597495993905557` 
+- **F1 Score:** `0.8315565031982942` 
+- **Confusion Matrix:**
+[[51724 3]
+[ 76 195]]
 
 ### Optimization Process
 
@@ -12,7 +21,7 @@
 2. **Evaluation:**
    - Evaluated the model at the best threshold and generated performance metrics such as AUC score, balanced accuracy, and confusion matrix.
 
-## Results
+## Results with optimization
 
 After optimization, the best threshold was found to be `0.1`. The evaluation metrics at this threshold are as follows:
 
@@ -25,5 +34,31 @@ After optimization, the best threshold was found to be `0.1`. The evaluation met
 
 Below is a plot showing how the F1 score, precision, recall, and balanced accuracy vary with the threshold. The best threshold is highlighted in red.
 
-![Metrics vs. Threshold](/workspaces/Summer-2024-ECE-597-Group10/ML_Techniques/LR_plot.png)
+![Metrics vs. Threshold](/ML_Techniques/LR_optimization_results.png)
+
+## *Logistic Regression with new balanced dataset*
+
+## Results of base LR
+
+- **AUC Score:** `0.9953506511382493` 
+- **Balanced Accuracy Score:** `0.9522638811357258` 
+- **F1 Score:** `0.9480249480249481` 
+- **Confusion Matrix:**
+[[519 2]
+[ 23 228]]
+
+## Results with optimization
+
+After optimization, the best threshold was found to be `0.4`. The evaluation metrics at this threshold are as follows:
+
+- **AUC Score:** `0.9953506511382493` 
+- **Balanced Accuracy Score:** `0.9583126228292205` 
+- **F1 Score:** `0.9527720739219713` 
+- **Confusion Matrix:**
+[[517 4]
+[ 19 232]]
+
+Below is a plot showing how the F1 score, precision, recall, and balanced accuracy vary with the threshold. The best threshold is highlighted in red.
+
+![Metrics vs. Threshold](/ML_Techniques/LR_optimization_results_balanced.png)
 
