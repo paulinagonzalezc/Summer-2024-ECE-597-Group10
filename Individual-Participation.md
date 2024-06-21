@@ -8,7 +8,7 @@
 | Bilel Matmti     | ML Technique 1: Logistic Regression    | Logistic Regression Research, Setting up logistic regression on Jupyter Notebook, Coding and optimizations      |       
 | Adel Agha        | ML Technique 3: Random Forest          | Random Forest Classifier Research, Jupyter Notebook Setup                             |
 | Zixin Li         | ML Technique 1: Logistic Regression    | Logistic Regression Research, Logistic Regression Optimization                                                          |
-| Summer Liu       | ML Technique 2: SVM                    | Implemented linear-SVM|                    
+| Summer Liu       | ML Technique 2: SVM                    | Implemented linear-SVM, tried different vectorizer and compared two results |                    
 | Birva Patel      | ML Technique 3: Random Forest          | Random Forest Provided an overview,Optimized and developed Random Forest classifier using Scikit-Learn; integrated into project pipeline  |                         
 
 
