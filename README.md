@@ -75,3 +75,14 @@ Below is a plot showing how the F1 score, precision, recall, and balanced accura
 
 ![Metrics vs. Threshold](/ML_Techniques/LR_optimization_results_balanced_newpreprocessing.png)
 
+## *With Cross Validation*
+
+## Results
+
+- **AUC Score:** `0.9944531671002123` 
+- **Balanced Accuracy Score:** `0.9415827850257134` 
+- **F1 Score:** `0.9369127516778524` 
+- **Confusion Matrix:**
+[[761   2]
+ [ 45 349]]
+
