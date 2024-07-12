@@ -77,7 +77,9 @@ Below is a plot showing how the F1 score, precision, recall, and balanced accura
 
 ## *With Cross Validation*
 
-## Results
+## Final Results
+
+## TFIDF
 
 - **AUC Score:** `0.9944531671002123` 
 - **Balanced Accuracy Score:** `0.9415827850257134` 
@@ -85,4 +87,15 @@ Below is a plot showing how the F1 score, precision, recall, and balanced accura
 - **Confusion Matrix:**
 [[761   2]
  [ 45 349]]
+
+ ## Word2Vec
+
+- **AUC Score:** `0.9961113957062359` 
+- **Balanced Accuracy Score:** `0.9661834463212939` 
+- **F1 Score:** `0.96` 
+- **Confusion Matrix:**
+[[754   9]
+ [ 22 372]]
+
+
 
