@@ -1,0 +1,81 @@
+  1. Importing Libraries and Setting Up
+- This block imports the necessary libraries for data manipulation (`pandas`), model training and evaluation (`scikit-learn`), tokenization (`nltk`), spelling correction (`pyspellchecker`), and visualization (`matplotlib`, `seaborn`).
+- `Word2Vec` from `gensim` is used for word embedding.
+- `nltk.download('punkt')` ensures the necessary data for tokenization is available.
+
+  2. Loading and Splitting the Data
+- This block reads the dataset into a `pandas` DataFrame.
+- `X` and `y` are defined as the features and labels respectively.
+- The data is split into training, validation, and test sets (70% training, 15% validation, and 15% test).
+
+  3. Word2Vec Vectorization
+- `tokenize_text`: Tokenizes the text into words.
+- Tokenizes the training, validation, and test sets.
+- Trains a Word2Vec model on the training data.
+- `get_average_word2vec`: Computes the average Word2Vec vector for a list of tokens.
+- Applies this function to the tokenized data to get the Word2Vec representations.
+
+  4. Computing and Combining Features
+- `compute_text_length`: Computes the length of each text entry.
+- Computes text lengths for the training, validation, and test sets.
+- Combines the Word2Vec vectors with text lengths to form the final feature sets.
+
+  5. Training a Random Forest Classifier
+- Initializes a Random Forest classifier with 100 trees.
+- Trains the classifier on the combined training data.
+
+  6. Model Evaluation
+- Predicts labels for the test set.
+- Calculates and prints the test accuracy.
+- Generates and prints a classification report.
+- Generates and prints a confusion matrix.
+
+  7. Confusion Matrix Visualization
+
+- Visualizes the confusion matrix using a heatmap for better understanding.
+
+  8. Adding Misspelled Words Feature
+- Initializes the spell checker.
+- `count_misspelled_words`: Counts the number of misspelled words in a text.
+- Computes the number of misspelled words for the training, validation, and test sets.
+- Combines the Word2Vec vectors, text lengths, and misspelled word counts to form the final feature sets.
+
+  9. Retraining the Random Forest Classifier
+- Reinitializes and retrains the Random Forest classifier with the new combined feature set.
+
+  10. Reevaluating the Model
+
+- Predicts labels for the test set with the new model.
+- Calculates and prints the test accuracy.
+- Generates and prints a classification report.
+- Generates and prints a confusion matrix.
+
+  11. Confusion Matrix Visualization (Repeated)
+
+- Visualizes the confusion matrix using a heatmap again for the updated model.
+
+  12. Hyperparameter Tuning
+
+- Defines the hyperparameter distribution for Random Forest.
+- Performs randomized search with cross-validation to find the best hyperparameters.
+- Prints the best parameters and the best cross-validation score.
+
+  13. Training with Best Parameters
+
+- Trains the Random Forest classifier with the best-found hyperparameters.
+
+  14. Final Model Evaluation
+
+- Predicts labels for the validation set and calculates validation accuracy.
+- Predicts labels for the test set and calculates test accuracy.
+- Generates and prints a classification report.
+- Generates and prints a confusion matrix.
+- Visualizes the confusion matrix using a heatmap.
+
+  15. ROC Curve and AUC Score
+
+- Predicts probabilities for the test set.
+- Calculates the False Positive Rate (FPR), True Positive Rate (TPR), and thresholds for the ROC curve.
+- Calculates the Area Under the Curve (AUC) score.
+- Plots the ROC curve.
+- Prints the AUC score.
