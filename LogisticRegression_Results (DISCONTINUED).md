@@ -1,5 +1,7 @@
 # Summer-2024-ECE-597-Group10
 
+## ***Note: This file has been discontinued and results can be found in the report, presentation, or the jupyter notebook***
+
 ## *Logistic Regression*
 
 ## Results of base LR
